@@ -1,0 +1,217 @@
+
+body {
+    background-color: #ffffff; 
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; 
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #4b6cb7, #182848); 
+    padding: 20px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    color: white; 
+    margin: 0;
+    font-size: 28px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e0e7ff; 
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.nav-links a:hover {
+    color: #67e8f9; 
+    transform: scale(1.1); 
+}
+
+
+.container {
+    padding: 40px;
+    
+    
+    gap: 30px; 
+}
+
+
+.col {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+.col:hover {
+    transform: translateY(-5px); 
+}
+
+.col h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.col p {
+    color: #6c757d;
+}
+
+.contact {
+   background-color: #007bff; 
+   padding: 40px;
+   text-align: center;
+   color: white; 
+   border-radius: 8px; 
+   margin-top: 20px; 
+   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.intro-section {
+   height: auto; 
+   background-image: linear-gradient(to right, #6a11cb, #2575fc); 
+   display:flex; 
+   flex-direction:center; 
+   justify-content:center; 
+   align-items:center; 
+   text-align:center; 
+   color:white; 
+   padding :60px ;
+   animation: fadeInUp 1s ease-in-out; 
+}
+
+.intro-section h1 {
+   font-size: 48px;
+   margin-bottom: 10px;
+   animation-duration :2s ;
+}
+
+.intro-section p {
+   font-size: 20px;
+   margin-top: 0;
+   animation-duration :2s ;
+}
+
+
+@keyframes fadeInUp {
+   from { opacity :0 ; transform :translateY(20px); }
+   to { opacity :1 ; transform :translateY(0); }
+}
+
+@keyframes slideIn {
+   from { transform :translateY(50px); opacity :0 ; }
+   to { transform :translateY(0); opacity :1 ; }
+}
+
+body::before,
+body::after {
+   content: '';
+   position: absolute;
+   width: 500px; 
+   height: 500px; 
+   z-index:-1 ;
+}
+
+body::before {
+   top:-100px ;
+   left:-100px ;
+   background-color:#e9ecef ; 
+   border-radius :50% ;
+   animation : float1 10s ease-in-out infinite ;
+}
+
+body::after {
+   bottom:-100px ;
+   right:-100px ;
+   background-color:#007bff ; 
+   border-radius :50% ;
+   animation : float2 12s ease-in-out infinite reverse ;
+}
+
+@keyframes float1 {
+   from { transform :translateY(0) translateX(0); }
+   to { transform :translateY(20px) translateX(20px); }
+}
+
+@keyframes float2 {
+   from { transform :translateY(0) translateX(0); }
+   to { transform :translateY(-20px) translateX(-20px); }
+}
+.intro-section {
+    height: 50vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+.intro-section h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.intro-section p {
+    font-size: 20px;
+    margin-top: 0;
+    animation: slideIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+footer{
+    background-color: #333;
+    color: #e0e7ff;
+    text-align: center;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: var(#e0e7ff);
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
